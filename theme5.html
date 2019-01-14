@@ -10,7 +10,8 @@
  |
  |  Theme #5 by raiidens (@ tumblr)
  |  Published October 2015
- |  Ver. 1.01
+ |  Updated January 2016
+ |  Ver. 1.04
  |
  |  Edit as much as you like, but please do not
  |  claim as your own work, and leave credit somewhere.
@@ -53,6 +54,8 @@
 <meta name="color:Scrollbar" content="#D79897">
 <meta name="color:Scrollbar border" content="#CCCCCC">
 <meta name="color:Scrollbar background" content="#FFFFFF">
+<meta name="color:Text highlight" content="#000000">
+<meta name="color:Text highlight background" content="#D79897">
 
 <meta name="color:Description box text" content="#000000">
 <meta name="color:Description box background" content="#FFFFFF">
@@ -128,7 +131,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
 <script type="text/javascript" src="http://static.tumblr.com/o4povtk/gw0ntnfmk/jquery.tooltipster.min.js"></script>
 {block:IfInfiniteScrolling}
-<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+<script type="text/javascript" src="http://static.tumblr.com/o4povtk/zYLo1itkm/codyshermaninfscroll.js"></script>
 {/block:IfInfiniteScrolling}
 
 <style type="text/css">
@@ -168,9 +171,9 @@ iframe#tumblr_controls {
     transition: all 0.4s ease-in-out;
 }
 iframe#tumblr_controls:hover {opacity: 1.0;}
-::selection {background-color: transparent;}
-::-moz-selection {background-color: transparent;}
-::-webkit-selection {background-color: transparent;}
+::selection {background-color:{color:Text highlight background}; color:{color:Text highlight};}
+::-moz-selection {background-color:{color:Text highlight background}; color:{color:Text highlight};}
+::-webkit-selection {background-color:{color:Text highlight background}; color:{color:Text highlight};}
 
 html, body, p, h1, h2, h3, h4, h5, h6, blockquote {
     margin:0;
@@ -556,7 +559,6 @@ ol.notes li.note{
     height:180px;
     top:170px;
     left:-20px;
-    z-index:-9;
     background-image:url('{image:Paint drip image}');
     background-size:contain;
     background-repeat:no-repeat;
@@ -793,7 +795,7 @@ $(document).ready(function() {
     <div id="linkbox">
         <a href="/"><div id="linkboxlinkm"><center>Home</center></div></a>
         <a href="/ask"><div id="linkboxlinkm"><center>Message</center></div></a>
-        <a href="http://raiidens.tumblr.com"><div id="linkboxlinkm"><center>Theme</center></div></a>
+        <a href="http://raiidens.tumblr.com/tagged/themesbyraiidens"><div id="linkboxlinkm"><center>Theme</center></div></a>
         {block:IfLink1Title}<a href="{text:Link 1 URL}"><div id="linkboxlink"><center>{text:Link 1 Title}</center></div></a>{/block:IfLink1Title}
         {block:IfLink2Title}<a href="{text:Link 2 URL}"><div id="linkboxlink"><center>{text:Link 2 Title}</center></div></a>{/block:IfLink2Title}
         {block:IfLink3Title}<a href="{text:Link 3 URL}"><div id="linkboxlink"><center>{text:Link 3 Title}</center></div></a>{/block:IfLink3Title}
@@ -920,23 +922,24 @@ $(document).ready(function() {
 
             {block:Audio}
             <div class="audio">
-            {block:AlbumArt}
-            <img src="{AlbumArtURL}">
-            {/block:AlbumArt}
-            {AudioPlayer}
+            {block:AlbumArt}<div style="float:left;"><img src="{AlbumArtURL}" width="150" height="150"></div>{/block:AlbumArt}
+            <div style="position:relative; left:10px; top:5px">
             {block:trackname}<div class="aline"><b>track name:</b> {trackname}</div>{/block:trackname}
             {block:artist}<div class="aline"><b>artist:</b> {artist}</div>{/block:artist}
             {block:album}<div class="aline"><b>album:</b> {album}</div>{/block:album}
             {block:playcount}<div class="aline"><b>play count:</b> {playcount}</div>{/block:playcount}
+            </div>
+            <div style="clear:both;"></div>
+            {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
             {block:IfShowCaptions}
             {block:Caption}
-            <div class="caption">{Caption}</div>
+            {Caption}
             {/block:Caption}
             {/block:IfShowCaptions}
             {block:IfNotShowCaptions}
             {block:PermalinkPage}
             {block:Caption}
-            <div class="caption">{Caption}</div>
+            {Caption}
             {/block:Caption}
             {/block:PermalinkPage}
             {/block:IfNotShowCaptions}
@@ -956,4 +959,17 @@ $(document).ready(function() {
             {/block:Posts}
             </ol>
     </div>
-</body></html>
+</body>
+<script>
+$(document).ready(function(){
+    $('p').each(function() {
+        var text = $(this).html();
+        var regex = /\(Source:.*\)+/ig;
+        text = text.replace(regex, '');
+        regex = /\(via(.*)\)+/ig;
+        text = text.replace(regex, '');
+        $(this).html(text);
+    });
+});
+</script>
+</html>
