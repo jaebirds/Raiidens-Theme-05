@@ -10,7 +10,7 @@
  |
  |  Theme #5 by raiidens (@ tumblr)
  |  Published October 2015
- |  Ver. 1.00
+ |  Ver. 1.01
  |
  |  Edit as much as you like, but please do not
  |  claim as your own work, and leave credit somewhere.
@@ -224,7 +224,12 @@ blockquote {
     text-align:justify;
 }
 blockquote p {display:block!important;}
-blockquote img {max-width:220px!important;}
+blockquote img {
+	display:block;
+	max-width:450px;
+	width:auto;
+	height:auto;
+}
 
 #posts {{block:IfNotMirrorLayout}float:left;{/block:IfNotMirrorLayout}{block:IfMirrorLayout}float:right;{/block:IfMirrorLayout} height:auto;}
 
@@ -861,7 +866,7 @@ $(document).ready(function() {
             <div class="quote">
             {Quote}
             {block:Source}
-            <h3><div class="source">— {Source}</div></h3>
+            <h3><div class="source">â€” {Source}</div></h3>
             {/block:Source}
             {/block:Quote}
 
