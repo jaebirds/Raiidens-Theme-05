@@ -1,24 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>{Title}</title>
-<link rel="shortcut icon" href="{Favicon}">
-<link rel="alternate" type="application/rss+xml" href="{RSS}">
-{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<!DOCTYPE html>
 
 <!--
  |
  |  Theme #5 by raiidens (@ tumblr)
  |  Published October 2015
- |  Updated February 2016
- |  Ver. 1.05
+ |  Updated April 2019
+ |  Ver. 1.06
  |
  |  Edit as much as you like, but please do not
  |  claim as your own work, and leave credit somewhere.
  |
  -->
+ 
+<head>
+<title>{Title}</title>
 
-<meta name="if:Infinite scrolling" content="0">
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
 <meta name="if:Show pagination buttons" content="1">
 <meta name="if:Show captions" content="1">
 <meta name="if:Always show post info" content="0">
@@ -33,80 +33,80 @@
 <meta name="if:Black and white images" content="0">
 <meta name="if:Color images on hover" content="0">
 
-<meta name="image:Sidebar image" content="http://static.tumblr.com/o4povtk/Jbhnw478p/t1.gif">
-<meta name="image:Paint drip image" content="http://static.tumblr.com/o4povtk/7bInw4bxb/drips4.png">
-<meta name="image:Corner image" content="http://static.tumblr.com/o4povtk/ytHnw4ac7/t2.png">
-<meta name="image:Main background image" content="http://static.tumblr.com/o4povtk/kNQnw2gwu/linedpaper.png">
+<meta name="image:Sidebar image" content="https://static.tumblr.com/o4povtk/Jbhnw478p/t1.gif">
+<meta name="image:Paint drip image" content="https://static.tumblr.com/o4povtk/7bInw4bxb/drips4.png">
+<meta name="image:Corner image" content="https://static.tumblr.com/o4povtk/ytHnw4ac7/t2.png">
+<meta name="image:Main background image" content="https://static.tumblr.com/o4povtk/kNQnw2gwu/linedpaper.png">
 <meta name="image:Sidebar background image" content="">
 
-<meta name="color:Main background" content="#FFFFFF">
+<meta name="color:Main background" content="#FFF">
 <meta name="color:Main background gradient top" content="#D79897">
 <meta name="color:Main background gradient bottom" content="#EDF7D4">
-<meta name="color:Sidebar background" content="#FFFFFF">
+<meta name="color:Sidebar background" content="#FFF">
 <meta name="color:Sidebar background gradient top" content="#D79897">
 <meta name="color:Sidebar background gradient bottom" content="#EDF7D4">
-<meta name="color:Text" content="#000000">
-<meta name="color:Bold text" content="#000000">
-<meta name="color:Italic text" content="#000000">
+<meta name="color:Text" content="#000">
+<meta name="color:Bold text" content="#000">
+<meta name="color:Italic text" content="#000">
 <meta name="color:Link" content="#5E5E5E">
-<meta name="color:Link hover" content="#000000">
+<meta name="color:Link hover" content="#000">
 <meta name="color:Blockquote" content="#D79897">
 <meta name="color:Scrollbar" content="#D79897">
-<meta name="color:Scrollbar border" content="#CCCCCC">
-<meta name="color:Scrollbar background" content="#FFFFFF">
-<meta name="color:Text highlight" content="#000000">
+<meta name="color:Scrollbar border" content="#CCC">
+<meta name="color:Scrollbar background" content="#FFF">
+<meta name="color:Text highlight" content="#000">
 <meta name="color:Text highlight background" content="#D79897">
 
-<meta name="color:Description box text" content="#000000">
-<meta name="color:Description box background" content="#FFFFFF">
-<meta name="color:Description box border" content="gray">
-<meta name="color:Description box highlight text" content="#000000">
+<meta name="color:Description box text" content="#000">
+<meta name="color:Description box background" content="#FFF">
+<meta name="color:Description box border" content="#808080">
+<meta name="color:Description box highlight text" content="#000">
 <meta name="color:Description box highlight background" content="#DBE4B8">
-<meta name="color:Description box scrollbar" content="gray">
-<meta name="color:Description box scrollbar border" content="gray">
-<meta name="color:Description box scrollbar background" content="#FFFFFF">
-<meta name="color:Sidebar background" content="#FFFFFF">
-<meta name="color:Sidebar border" content="#FFFFFF">
-<meta name="color:Sidebar main link text" content="gray">
+<meta name="color:Description box scrollbar" content="#808080">
+<meta name="color:Description box scrollbar border" content="#808080">
+<meta name="color:Description box scrollbar background" content="#FFF">
+<meta name="color:Sidebar background" content="#FFF">
+<meta name="color:Sidebar border" content="#FFF">
+<meta name="color:Sidebar main link text" content="#808080">
 <meta name="color:Sidebar main link background" content="#DBE4B8">
-<meta name="color:Sidebar main link border" content="gray">
-<meta name="color:Sidebar link text" content="gray">
-<meta name="color:Sidebar link background" content="#FFFFFF">
-<meta name="color:Sidebar link border" content="gray">
-<meta name="color:Sidebar link hover text" content="#FFFFFF">
+<meta name="color:Sidebar main link border" content="#808080">
+<meta name="color:Sidebar link text" content="#808080">
+<meta name="color:Sidebar link background" content="#FFF">
+<meta name="color:Sidebar link border" content="#808080">
+<meta name="color:Sidebar link hover text" content="#FFF">
 <meta name="color:Sidebar link hover background" content="#DE7473">
-<meta name="color:Sidebar link hover border" content="#CCCCCC">
-<meta name="color:Cross left" content="#CCCCCC">
-<meta name="color:Cross right" content="#CCCCCC">
-<meta name="color:Cross left hover" content="#FFFFFF">
-<meta name="color:Cross right hover" content="#FFFFFF">
+<meta name="color:Sidebar link hover border" content="#CCC">
+<meta name="color:Cross left" content="#CCC">
+<meta name="color:Cross right" content="#CCC">
+<meta name="color:Cross left hover" content="#FFF">
+<meta name="color:Cross right hover" content="#FFF">
 
-<meta name="color:Post background" content="#FFFFFF">
-<meta name="color:Post border" content="#CCCCCC">
-<meta name="color:Post title" content="#000000">
+<meta name="color:Post background" content="#FFF">
+<meta name="color:Post border" content="#CCC">
+<meta name="color:Post title" content="#000">
 <meta name="color:Post title link" content="">
 <meta name="color:Post title link hover" content="">
 <meta name="color:Answer background" content="#DBE4B8">
-<meta name="color:Answer text" content="#000000">
-<meta name="color:Question text" content="#000000">
-<meta name="color:Asker name" content="#000000">
+<meta name="color:Answer text" content="#000">
+<meta name="color:Question text" content="#000">
+<meta name="color:Asker name" content="#000">
 <meta name="color:Post info bar" content="#D79897">
-<meta name="color:Post info" content="#000000">
-<meta name="color:Post info link" content="#000000">
-<meta name="color:Post info tags" content="gray">
-<meta name="color:Post info tags hover" content="#000000">
+<meta name="color:Post info" content="#000">
+<meta name="color:Post info link" content="#000">
+<meta name="color:Post info tags" content="#808080">
+<meta name="color:Post info tags hover" content="#000">
 
-<meta name="color:Tooltip border" content="#000000">
-<meta name="color:Tooltip background" content="#FFFFFF">
-<meta name="color:Tooltip text" content="gray">
+<meta name="color:Tooltip border" content="#000">
+<meta name="color:Tooltip background" content="#FFF">
+<meta name="color:Tooltip text" content="#808080">
 
-<meta name="color:Pagination outer background" content="#FFFFFF">
+<meta name="color:Pagination outer background" content="#FFF">
 <meta name="color:Pagination inner background" content="#D79897">
-<meta name="color:Pagination arrow" content="#FFFFFF">
-<meta name="color:Pagination border" content="gray">
-<meta name="color:Pagination hover background" content="#CCCCCC">
-<meta name="color:Pagination hover arrow" content="gray">
-<meta name="color:Pagination hover border" content="gray">
+<meta name="color:Pagination arrow" content="#FFF">
+<meta name="color:Pagination border" content="#808080">
+<meta name="color:Pagination hover background" content="#CCC">
+<meta name="color:Pagination hover arrow" content="#808080">
+<meta name="color:Pagination hover border" content="#808080">
 
 <meta name="font:Body font" content="Helvetica">
 <meta name="font:Post title font" content="Josefin Sans">
@@ -124,45 +124,42 @@
 <meta name="text:Link 4 Title" content="Link 4">
 <meta name="text:Link 4 URL" content="">
 
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/o4povtk/TvXntnflr/tooltipster.css">
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/o4povtk/gw0ntnfmk/jquery.tooltipster.min.js"></script>
-{block:IfInfiniteScrolling}
-<script type="text/javascript" src="http://static.tumblr.com/o4povtk/zYLo1itkm/codyshermaninfscroll.js"></script>
-{/block:IfInfiniteScrolling}
+<link rel="stylesheet" type="text/css" href="//static.tumblr.com/o4povtk/TvXntnflr/tooltipster.css">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.7.0.min.js"></script>
+<script type="text/javascript" src="//static.tumblr.com/o4povtk/gw0ntnfmk/jquery.tooltipster.min.js"></script>
 
 <style type="text/css">
 .tooltiptheme {
-	border-radius:5px; 
-	border:1px solid {color:Tooltip border};
-	background:{color:Tooltip background};
-	color:{color:Tooltip text};
+	border-radius: 5px; 
+	border: 1px solid {color:Tooltip border};
+	background: {color:Tooltip background};
+	color: {color:Tooltip text};
 }
 .tooltiptheme .tooltipster-content {
-    font-variant:small-caps;
-	font-family:{font:Tooltip font};
-	font-size:9pt;
-	line-height:16px;
-	padding:8px 10px;
+    font-variant: small-caps;
+	font-family: {font:Tooltip font};
+	font-size: 9pt;
+	line-height: 16px;
+	padding: 8px 10px;
 }
 
 ::-webkit-scrollbar {
-    width:6px;
-    height:4px;
-    background:{color:Scrollbar background};
+    width: 6px;
+    height: 4px;
+    background: {color:Scrollbar background};
 }
 ::-webkit-scrollbar-thumb {
-    background-color:{color:Scrollbar};
+    background-color: {color:Scrollbar};
     border: 1px double {color:Scrollbar border};
 }
 
 .tmblr-iframe {
-    top:3px !important;
-    right:3px !important;
-    position:fixed !important;
+    top: 3px !important;
+    right: 3px !important;
+    position: fixed !important;
     opacity: 0.3;
 	z-index: 999999 !important;
     -webkit-transform: translateZ(0);
@@ -171,50 +168,50 @@
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.tmblr-iframe:hover {opacity: 1.0;}
-::selection {background-color:{color:Text highlight background}; color:{color:Text highlight};}
-::-moz-selection {background-color:{color:Text highlight background}; color:{color:Text highlight};}
-::-webkit-selection {background-color:{color:Text highlight background}; color:{color:Text highlight};}
+.tmblr-iframe:hover {opacity: 1;}
+::selection {background-color: {color:Text highlight background}; color: {color:Text highlight};}
+::-moz-selection {background-color: {color:Text highlight background}; color: {color:Text highlight};}
+::-webkit-selection {background-color: {color:Text highlight background}; color: {color:Text highlight};}
 
 html, body, p, h1, h2, h3, h4, h5, h6, blockquote {
-    margin:0;
-    padding:0;
-    list-style:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 p {margin:10; margin-bottom:10px;}
 body {
-    font-family:{font:Body font};
-    font-size:10px;
-    color:{color:Text};
-    background-color:{color:Background};
+    font-family: {font:Body font};
+    font-size: 10px;
+    color: {color:Text};
+    background-color: {color:Background};
     {block:IfNotGradientOnMainBackground}background-image: url('{image:Main background image}');{/block:IfNotGradientOnMainBackground}
-    {block:IfGradientOnMainBackground}background:linear-gradient(180deg, {color:Main background gradient top}, {color:Main background gradient top} 30%, {color:Main background gradient bottom});{/block:IfGradientOnMainBackground}
-    background-attachment:fixed;
-    line-height:5px;
-    line-height:10px;
-    overflow-y:auto;
+    {block:IfGradientOnMainBackground}background: linear-gradient(180deg, {color:Main background gradient top}, {color:Main background gradient top} 30%, {color:Main background gradient bottom});{/block:IfGradientOnMainBackground}
+    background-attachment: fixed;
+    line-height: 5px;
+    line-height: 10px;
+    overflow-y: auto;
 }
 
 a {
-    color:{color:Link};
-    text-decoration:none;
+    color: {color:Link};
+    text-decoration: none;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-a:hover {color:{color:Link hover};}
+a:hover {color: {color:Link hover};}
 {block:IfMiniCursor}
-body, a, a:hover, div:hover {cursor:url(http://static.tumblr.com/o4povtk/aLunw2ggk/cursorw.png), auto;}
+body, a, a:hover, div:hover {cursor: url("https://static.tumblr.com/o4povtk/aLunw2ggk/cursorw.png"), auto;}
 {/block:IfMiniCursor}
 
-b, strong {color:{color:Bold text};}
-i, em {color:{color:Italic text};}
-small {font-size:8px;}
-big {font-size:12px;}
+b, strong {color: {color:Bold text};}
+i, em {color: {color:Italic text};}
+small {font-size: 8px;}
+big {font-size: 12px;}
 
-ul {text-align:justify;}
-ul, ol {margin-left:-25px;}
+ul {text-align: justify;}
+ul, ol {margin-left: -25px;}
 
 hr {
     border: 0;
@@ -225,38 +222,38 @@ hr {
 blockquote {
     padding: 3px 0 3px 13px;
     border-left: 7px solid {color:Blockquote};
-    text-align:justify;
+    text-align: justify;
 }
 blockquote p {display:block!important;}
 blockquote img {
-	display:block;
-	max-width:450px;
-	width:auto;
-	height:auto;
+	display: block;
+	max-width: 450px;
+	width: auto;
+	height: auto;
 }
 
-#posts {{block:IfNotMirrorLayout}float:left;{/block:IfNotMirrorLayout}{block:IfMirrorLayout}float:right;{/block:IfMirrorLayout} height:auto;}
+#posts {{block:IfNotMirrorLayout}float: left;{/block:IfNotMirrorLayout}{block:IfMirrorLayout}float: right;{/block:IfMirrorLayout} height:auto;}
 
 .post {
     line-height: 18px;
     clear: both;
-    background-color:{color:Post background};
-    border:solid 1px {color:Post border};
+    background-color: {color:Post background};
+    border: solid 1px {color:Post border};
     width: 500px;
     height: 100%;
-    margin-top:10px;
-    padding: 20px 20px 20px 20px;
+    margin-top: 10px;
+    padding: 20px;
 }
 .post h3 {
     font-size: 2em;
-    overflow:visible;
-    color:{color:Post title};
-    font-family:{font:Post title font};
+    overflow: visible;
+    color: {color:Post title};
+    font-family: {font:Post title font};
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
 }
-.post h3:hover {margin-left:10px;}
+.post h3:hover {margin-left: 10px;}
 
 .caption blockquote {padding-left: 20px;}
 
@@ -269,28 +266,28 @@ blockquote img {
 .post photo img {border: 0;}
 
 .post quote {text-align: left;}
-.post quote .source {font-size: 10em; font-family:{font:Quote source font};}
+.post quote .source {font-size: 10em; font-family: {font:Quote source font};}
 
 .post ask {text-align: left;}
 
 .answer {
-    width:440px;
+    width: 440px;
     text-align: left;
     line-height: 15px;
-    color:{color:Answer text};
-    background-color:{color:Answer background};
-    padding: 10px 10px 10px 10px;
+    color: {color:Answer text};
+    background-color: {color:Answer background};
+    padding: 10px;
 }
 .question {
-    max-width:365px;
-    margin-bottom: 0px;
+    max-width: 365px;
+    margin-bottom: 0;
     line-height: 15px;
-    color:{color:Question text};
+    color: {color:Question text};
 }
 
 .ask {
     width: 500px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
 .askerportrait {
@@ -305,7 +302,7 @@ blockquote img {
 }
 
 .asker {
-    color:{color:Asker name};
+    color: {color:Asker name};
     text-transform: uppercase;
 }
 
@@ -321,78 +318,78 @@ blockquote img {
 .post chat li {list-style-type: none;}
 
 .infobar {
-    {block:IfNotAlwaysShowPostInfo}height:3px;{/block:IfNotAlwaysShowPostInfo}
-    {block:IfAlwaysShowPostInfo}height:10px; background-color:{color:Post info bar};{/block:IfAlwaysShowPostInfo}
-    width:540px;
-    margin-top:3px;
-    margin-bottom:3px;
+    {block:IfNotAlwaysShowPostInfo}height: 3px;{/block:IfNotAlwaysShowPostInfo}
+    {block:IfAlwaysShowPostInfo}height: 10px; background-color: {color:Post info bar};{/block:IfAlwaysShowPostInfo}
+    width: 540px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
 }
 .infobox {
-    {block:IfNotAlwaysShowPostInfo}max-height:0px; opacity:0;{/block:IfNotAlwaysShowPostInfo}
-    {block:IfAlwaysShowPostInfo}max-height:500px; opacity:1;{/block:IfAlwaysShowPostInfo}
-    width:500px;
-    padding-left:20px;
-    padding-right:20px;
-    color:{color:Post info};
-    font-variant:small-caps;
-    font-family:{font:Post info font};
-    font-size:10pt;
+    {block:IfNotAlwaysShowPostInfo}max-height: 0; opacity: 0;{/block:IfNotAlwaysShowPostInfo}
+    {block:IfAlwaysShowPostInfo}max-height: 500px; opacity: ;{/block:IfAlwaysShowPostInfo}
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: {color:Post info};
+    font-variant: small-caps;
+    font-family: {font:Post info font};
+    font-size: 10pt;
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
 }
-.infobox a {color:{color:Post info link};}
+.infobox a {color: {color:Post info link};}
 .tags a {
-    color:{color:Post info tags};
+    color: {color:Post info tags};
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
 }
-.tags a:hover {color:{color:Post info tags hover};}
-.wholepost:hover .infobox {max-height:500px; opacity:1;}
-.wholepost:hover .infobar {background-color:{color:Post info bar}; height:10px;}
+.tags a:hover {color: {color:Post info tags hover};}
+.wholepost:hover .infobox {max-height: 500px; opacity: 1;}
+.wholepost:hover .infobar {background-color: {color:Post info bar}; height: 10px;}
 
 ol.notes {
-    display:block;
-    text-align:left;
-    margin-bottom:30px;
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
 }
 ol.notes li.note{
-    padding:1%;
-    list-style-type:none;
+    padding: 1%;
+    list-style-type: none;
 }
 
 .pagenotes {
-    margin-top:10px;
-    text-align:left;
-    background-color:{color:Post background};
-    border:solid 1px {color:Post border};
-    padding: 20px 20px 20px 20px;
-    width:500px;
+    margin-top: 10px;
+    text-align: left;
+    background-color: {color:Post background};
+    border: solid 1px {color:Post border};
+    padding: 20px;
+    width: 500px;
 }
 
 .caption{
-    padding-top:13px;
-    padding-left:10px;
-    padding-bottom:5px;
-    margin-top:5px;
-    text-align:left;
-    font-size:10px;
-    font-style:italic;
-    padding-right:10px;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 10px;
+    font-style: italic;
+    padding-right: 10px;
 }	
 
 .permapage {
-    letter-spacing:1px;
-    font-size:10px;
-    margin-top:5px;
-    text-transform:uppercase;
-    text-decoration:none;
-    padding:10px 10px 0 10px;
-    width:500px;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px 0 10px;
+    width: 500px;
 }
 
 .postsource {
@@ -406,24 +403,22 @@ ol.notes li.note{
 }
 .postsource a {
     text-decoration: none;
-    color:{color:Link};
+    color: {color:Link};
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.postsource a:hover {
-    color:{color:Link hover};
-}
+.postsource a:hover {color: {color:Link hover};}
 
 .posttitle {
-    color:{color:Post title};
-    text-align:left;
-    font-family:{font:Post title font};
-    padding:3px 0 3px 20px;
+    color: {color:Post title};
+    text-align: left;
+    font-family: {font:Post title font};
+    padding: 3px 0 3px 20px;
 }
 .posttitle a {
-    color:{color:Post title link};
+    color: {color:Post title link};
     text-decoration: none;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -431,7 +426,7 @@ ol.notes li.note{
     transition: all 0.4s ease-in-out;
 }
 .posttitle a:hover {
-    color:{color:Post title link hover};
+    color: {color:Post title link hover};
     padding: 3px 0 3px 5px;
 }
 
@@ -445,144 +440,144 @@ ol.notes li.note{
 }
 {block:IfColorImagesOnHover}
 .post img:hover, .html_photoset:hover {
-    filter:grayscale(0%); 
+    filter: grayscale(0%); 
     -webkit-filter: grayscale(0%);
 }
 {/block:IfColorImagesOnHover}
 {/block:IfBlackAndWhiteImages}
 
 #post_container {
-    position:absolute;
-    width:500px;
+    position: absolute;
+    width: 500px;
     {block:IfNotMirrorLayout}
-    left:30%;
-    margin-left:30px;
+    left: 30%;
+    margin-left: 30px;
     {/block:IfNotMirrorLayout}
     {block:IfMirrorLayout}
-    right:30%;
-    margin-right:30px;
+    right: 30%;
+    margin-right: 30px;
     {/block:IfMirrorLayout}
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
 }
-#post_container > ol {list-style-type:none;}
+#post_container > ol {list-style-type: none;}
 
 #cornerpicture {
-    {block:IfNotMirrorLayout}right:0px;{/block:IfNotMirrorLayout}
-    {block:IfMirrorLayout}left:0px;{/block:IfMirrorLayout}
-    position:fixed;
-    bottom:0px;
-    height:100%;
-    width:100%;
-    background-image:url('{image:Corner image}');
-    background-position:bottom {block:IfNotMirrorLayout}right{block:IfNotMirrorLayout}{block:IfMirrorLayout}left{/block:IfMirrorLayout};
-    background-repeat:no-repeat;
-    background-size:auto 100%;
-    -webkit-transform:translateZ(0);
+    {block:IfNotMirrorLayout}right: 0;{/block:IfNotMirrorLayout}
+    {block:IfMirrorLayout}left: 0;{/block:IfMirrorLayout}
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('{image:Corner image}');
+    background-position: bottom {block:IfNotMirrorLayout}right{block:IfNotMirrorLayout}{block:IfMirrorLayout}left{/block:IfMirrorLayout};
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    -webkit-transform: translateZ(0);
 }
 
 #nextpage, #previouspage, #nextpage_unavailable, #previouspage_unavailable {
-    height:35px;
-    width:35px;
-    bottom:10px;
-    border-radius:40px;
-    position:fixed;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    -webkit-transform:translateZ(0);
+    height: 35px;
+    width: 35px;
+    bottom: 10px;
+    border-radius: 40px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateZ(0);
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
 }
 #nextpage, #previouspage {
-    z-index:2;
-    background-color:{color:Pagination inner background};
-    color:{color:Pagination arrow};
-    border:solid 1px {color:Pagination border};
-    opacity:1;
+    z-index: 2;
+    background-color: {color:Pagination inner background};
+    color: {color:Pagination arrow};
+    border: solid 1px {color:Pagination border};
+    opacity: 1;
 }
 #nextpage:hover, #previouspage:hover {
-    background-color:{color:Pagination hover background};
-    color:{color:Pagination hover arrow};
-    border:solid 1px {color:Pagination hover border};
+    background-color: {color:Pagination hover background};
+    color: {color:Pagination hover arrow};
+    border: solid 1px {color:Pagination hover border};
     -ms-transform: scale(0.8, 0.8);
     -webkit-transform: scale(0.8, 0.8);
     transform: scale(0.8, 0.8);
 }
 #nextpage_unavailable, #previouspage_unavailable {
-    z-index:1;
-    opacity:0.6;
-    background-color:{color:Pagination outer background};
+    z-index: 1;
+    opacity: 0.6;
+    background-color: {color:Pagination outer background};
 }
 #nextpage, #nextpage_unavailable {
-    {block:IfNotMirrorLayout}left:30%; margin-left:-50px;{/block:IfNotMirrorLayout}
-    {block:IfMirrorLayout}right:30%; margin-right:-92px;{/block:IfMirrorLayout}
+    {block:IfNotMirrorLayout}left: 30%; margin-left: -50px;{/block:IfNotMirrorLayout}
+    {block:IfMirrorLayout}right: 30%; margin-right: -92px;{/block:IfMirrorLayout}
 }
 #previouspage, #previouspage_unavailable {
-    {block:IfNotMirrorLayout}left:30%; margin-left:-92px;{/block:IfNotMirrorLayout}
-    {block:IfMirrorLayout}right:30%; margin-right:-50px;{/block:IfMirrorLayout}
+    {block:IfNotMirrorLayout}left: 30%; margin-left: -92px;{/block:IfNotMirrorLayout}
+    {block:IfMirrorLayout}right: 30%; margin-right: -50px;{/block:IfMirrorLayout}
 }
 
 #sidebar_container {
-    position:fixed;
-    width:290px;
-    height:300px;
-    bottom:50%;
-    {block:IfNotMirrorLayout}left:30%; margin-left:-320px;{/block:IfNotMirrorLayout}
-    {block:IfMirrorLayout}right:30%; margin-right:-320px;{/block:IfMirrorLayout}
-    margin-bottom:-150px;
-    -webkit-transform:translateZ(0);
+    position: fixed;
+    width: 290px;
+    height: 300px;
+    bottom: 50%;
+    {block:IfNotMirrorLayout}left: 30%; margin-left: -320px;{/block:IfNotMirrorLayout}
+    {block:IfMirrorLayout}right: 30%; margin-right: -320px;{/block:IfMirrorLayout}
+    margin-bottom: -150px;
+    -webkit-transform: translateZ(0);
 }
 
 #sidebar {
-    position:absolute;
-    width:270px;
-    height:170px;
-    background-color:{color:Sidebar background};
-    background-image:url('{image:Sidebar image}');
-    background-size:cover;
-    border:solid 3px {color:Sidebar border};
-    z-index:99;
+    position: absolute;
+    width: 270px;
+    height: 170px;
+    background-color: {color:Sidebar background};
+    background-image: url('{image:Sidebar image}');
+    background-size: cover;
+    border: solid 3px {color:Sidebar border};
+    z-index: 99;
 }
 #sidebarh {
-    position:absolute;
-    z-index:999;
-    width:290px;
-    height:180px;
+    position: absolute;
+    z-index: 999;
+    width: 290px;
+    height: 180px;
 }
 
 #drip {
-    position:absolute;
-    width:330px;
-    height:180px;
-    top:170px;
-    left:-20px;
-    background-image:url('{image:Paint drip image}');
-    background-size:contain;
-    background-repeat:no-repeat;
+    position: absolute;
+    width: 330px;
+    height: 180px;
+    top: 170px;
+    left: -20px;
+    background-image: url('{image:Paint drip image}');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 {block:IfNotDisableTape}
 #tapel, #taper {
-    position:absolute;
-    width:100px;
-    height:100px;
-    background-image:url('http://static.tumblr.com/o4povtk/DfQnw1c8o/tape.png');
-    background-size:cover;
-    z-index:999;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://static.tumblr.com/o4povtk/DfQnw1c8o/tape.png');
+    background-size: cover;
+    z-index: 999;
 }
 #tapel {
-    top:-40px;
-    left:-40px;
+    top: -40px;
+    left: -40px;
     -ms-transform: rotate(-35deg);
     -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
 }
 #taper {
-    top:115px;
-    left:215px;
+    top: 115px;
+    left: 215px;
     -ms-transform: rotate(155deg);
     -webkit-transform: rotate(155deg);
     transform: rotate(155deg);
@@ -590,56 +585,56 @@ ol.notes li.note{
 {/block:IfNotDisableTape}
 {block:IfNotDisableDescriptionBox}
 #desc {
-    position:absolute;
-    width:252px;
-    height:152px;
-    {block:IfNotAlwaysShowDescription}opacity:0.0;{/block:IfNotAlwaysShowDescription}
-    {block:IfAlwaysShowDescription}opacity:0.9;{/block:IfAlwaysShowDescription}
-    background-color:{color:Description box background};
-    color:{color:Description box text};
-    z-index:999;
-    overflow-y:scroll;
-    padding:10px 10px 10px 10px;
-    margin:1px 1px 1px 1px;
+    position: absolute;
+    width: 252px;
+    height: 152px;
+    {block:IfNotAlwaysShowDescription}opacity: 0;{/block:IfNotAlwaysShowDescription}
+    {block:IfAlwaysShowDescription}opacity: 0.9;{/block:IfAlwaysShowDescription}
+    background-color: {color:Description box background};
+    color: {color:Description box text};
+    z-index: 999;
+    overflow-y: scroll;
+    padding: 10px;
+    margin: 1px;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
 }
 #desc .highlight {
-    width:225px;
-    height:auto;
-    background-color:{color:Description box highlight background};
-    color:{color:Description box highlight text};
-    padding:3px;
-    margin:5px 0px 5px 0px;
+    width: 225px;
+    height: auto;
+    background-color: {color:Description box highlight background};
+    color: {color:Description box highlight text};
+    padding: 3px;
+    margin: 5px 0;
 }
 #desc::-webkit-scrollbar {
-    width:15px;
-    height:4px;
-    background:{color:Description box scrollbar background};
+    width: 15px;
+    height: 4px;
+    background: {color:Description box scrollbar background};
 }
 #desc::-webkit-scrollbar-thumb {
-    background-color:{color:Description box scrollbar};
-    -webkit-border-radius: 0ex;
+    background-color: {color:Description box scrollbar};
+    -webkit-border-radius: 0;
     border: 1px double {color:Description box scrollbar border};
 }
-{block:IfNotAlwaysShowDescription}#desc:hover, #sidebar:hover #desc, #sidebarh:hover #desc {opacity:0.9;}{/block:IfNotAlwaysShowDescription}
+{block:IfNotAlwaysShowDescription}#desc:hover, #sidebar:hover #desc, #sidebarh:hover #desc {opacity: 0.9;}{/block:IfNotAlwaysShowDescription}
 {/block:IfNotDisableDescriptionBox}
 
 #crossl, #crossr {
-    height:3px;
-    width:275px;
-    left:0px;
-    position:absolute;
-    top:200px;
+    height: 3px;
+    width: 275px;
+    left: 0;
+    position: absolute;
+    top: 200px;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
 }
 #crossl {
-    background-color:{color:Cross left};
+    background-color: {color:Cross left};
     {block:IfNotAlwaysShowLinks}
     -ms-transform: rotate(7deg);
     -webkit-transform: rotate(7deg);
@@ -649,13 +644,13 @@ ol.notes li.note{
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    top:200px;
-    left:-40px;
-    width:100px;
+    top: 200px;
+    left: -40px;
+    width: 100px;
     {/block:IfAlwaysShowLinks}
 }
 #crossr {
-    background-color:{color:Cross right};
+    background-color: {color:Cross right};
     {block:IfNotAlwaysShowLinks}
     -ms-transform: rotate(173deg);
     -webkit-transform: rotate(173deg);
@@ -665,9 +660,9 @@ ol.notes li.note{
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    width:180px;
-    left:-70px;
-    top:250px;
+    width: 180px;
+    left: -70px;
+    top: 250px;
     {/block:IfAlwaysShowLinks}
 }
 {block:IfNotAlwaysShowLinks}
@@ -677,101 +672,101 @@ ol.notes li.note{
     transform: rotate(90deg);
 }
 #sidebar_container:hover #crossl {
-    background-color:{color:Cross left hover};
-    top:200px;
-    left:-40px;
-    width:100px;
+    background-color: {color:Cross left hover};
+    top: 200px;
+    left: -40px;
+    width: 100px;
 }
 #sidebar_container:hover #crossr {
-    background-color:{color:Cross right hover};
-    width:180px;
-    left:-70px;
-    top:250px;
+    background-color: {color:Cross right hover};
+    width: 180px;
+    left: -70px;
+    top: 250px;
 }
 {/block:IfNotAlwaysShowLinks}
 
 #linkbox {
-    position:absolute;
-    top:180px;
-    left:17px;
-    width:200px;
-    height:200px;
-    padding:3px 3px 3px 3px;
+    position: absolute;
+    top: 180px;
+    left: 17px;
+    width: 200px;
+    height: 200px;
+    padding: 3px;
 }
 #linkboxlink, #linkboxlinkm {
-    position:relative;
-    margin-bottom:2px;
-    height:13px;
-    font-family:{font:Sidebar link font};
-    font-size:9pt;
-    font-variant:small-caps;
-    padding:3px 5px 3px 5px;
-    background-color:{color:Sidebar link background};
-    color:{color:Sidebar link text};
-    border:solid 1px {color:Sidebar link border};
+    position: relative;
+    margin-bottom: 2px;
+    height: 13px;
+    font-family: {font:Sidebar link font};
+    font-size: 9pt;
+    font-variant: small-caps;
+    padding: 3px 5px;
+    background-color: {color:Sidebar link background};
+    color: {color:Sidebar link text};
+    border: solid 1px {color:Sidebar link border};
     {block:IfNotAlwaysShowLinks}
-    top:-20px;
-    opacity:0.0;
+    top: -20px;
+    opacity: 0;
     -ms-transform: rotateY(-90deg);
     -webkit-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
     {/block:IfNotAlwaysShowLinks}
     {block:IfAlwaysShowLinks}
-    top:0px;
-    opacity:1.0;
-    width:180px;
+    top: 0;
+    opacity: 1;
+    width: 180px;
     {/block:IfAlwaysShowLinks}
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
-    -webkit-transition-delay:0.10s;
-    transition-delay:0.10s;
+    -webkit-transition-delay: 0.10s;
+    transition-delay: 0.10s;
 }
 #linkboxlinkm {
-    background-color:{color:Sidebar main link background};
-    color:{color:Sidebar main link text};
-    border:solid 1px {color:Sidebar main link border};
-    padding:3px 20px 3px 5px;
-    -webkit-transition-delay:0.0s;
-    transition-delay:0.0s;
+    background-color: {color:Sidebar main link background};
+    color: {color:Sidebar main link text};
+    border: solid 1px {color:Sidebar main link border};
+    padding: 3px 20px 3px 5px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }
 #linkboxlink:hover, #linkboxlinkm:hover {
-    padding-left:40px;
-    background-color:{color:Sidebar link hover background};
-    color:{color:Sidebar link hover text};
-    border:solid 1px {color:Sidebar link hover border};
+    padding-left: 40px;
+    background-color: {color:Sidebar link hover background};
+    color: {color:Sidebar link hover text};
+    border: solid 1px {color:Sidebar link hover border};
 }
 {block:IfNotAlwaysShowLinks}
 #sidebar_container:hover #linkboxlink, #sidebar_container:hover #linkboxlinkm {
-    top:0px;
-    opacity:1.0;
-    width:180px;
+    top: 0;
+    opacity: 1;
+    width: 180px;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }{/block:IfNotAlwaysShowLinks}
 
 #sidebg, #sidebgt {
-    position:fixed;
-    height:100%;
-    width:30%;
-    {block:IfNotMirrorLayout}left:0px;{/block:IfNotMirrorLayout}
-    {block:IfMirrorLayout}right:0px;{/block:IfMirrorLayout}
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    {block:IfNotMirrorLayout}left: 0;{/block:IfNotMirrorLayout}
+    {block:IfMirrorLayout}right: 0;{/block:IfMirrorLayout}
 }
 #sidebg {
     {block:IfGradientOnSidebarBackground}
-    background:linear-gradient(180deg, {color:Sidebar background gradient top}, {color:Sidebar background gradient top} 30%, {color:Sidebar background gradient bottom});
+    background: linear-gradient(180deg, {color:Sidebar background gradient top}, {color:Sidebar background gradient top} 30%, {color:Sidebar background gradient bottom});
     {/block:IfGradientOnSidebarBackground}
     {block:IfNotGradientOnSidebarBackground}
-    background-color:{color:Sidebar background};
-    background-image:url('{image:Sidebar background image}');
+    background-color: {color:Sidebar background};
+    background-image: url('{image:Sidebar background image}');
     {/block:IfNotGradientOnSidebarBackground}
-    -webkit-box-shadow:inset -1px 0px 57px -13px rgba(0,0,0,0.75);
-    -moz-box-shadow:inset -1px 0px 57px -13px rgba(0,0,0,0.75);
-    box-shadow:inset -1px 0px 57px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset -1px 0 57px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px 0 57px -13px rgba(0,0,0,0.75);
+    box-shadow: inset -1px 0 57px -13px rgba(0,0,0,0.75);
 }
-{block:IfGradientOnSidebarBackground}#sidebgt {background-image:url('http://static.tumblr.com/o4povtk/Mpinw2jtj/subtle-zebra-3d.png'); opacity:1;}{/block:IfGradientOnSidebarBackground}
+{block:IfGradientOnSidebarBackground}#sidebgt {background-image:url('https://static.tumblr.com/o4povtk/Mpinw2jtj/subtle-zebra-3d.png'); opacity:1;}{/block:IfGradientOnSidebarBackground}
 </style>
 <script>
 $(document).ready(function() {
@@ -796,11 +791,11 @@ $(document).ready(function() {
     <div id="linkbox">
         <a href="/"><div id="linkboxlinkm"><center>Home</center></div></a>
         <a href="/ask"><div id="linkboxlinkm"><center>Message</center></div></a>
-        <a href="http://raiidens.tumblr.com/tagged/themesbyraiidens"><div id="linkboxlinkm"><center>Theme</center></div></a>
-        {block:IfLink1Title}<a href="{text:Link 1 URL}"><div id="linkboxlink"><center>{text:Link 1 Title}</center></div></a>{/block:IfLink1Title}
-        {block:IfLink2Title}<a href="{text:Link 2 URL}"><div id="linkboxlink"><center>{text:Link 2 Title}</center></div></a>{/block:IfLink2Title}
-        {block:IfLink3Title}<a href="{text:Link 3 URL}"><div id="linkboxlink"><center>{text:Link 3 Title}</center></div></a>{/block:IfLink3Title}
-        {block:IfLink4Title}<a href="{text:Link 4 URL}"><div id="linkboxlink"><center>{text:Link 4 Title}</center></div></a>{/block:IfLink4Title}
+        <a href="https://raiidens.tumblr.com/tagged/themesbyraiidens"><div id="linkboxlinkm"><center>Theme</center></div></a>
+        {block:IfLink1URL}<a href="{text:Link 1 URL}"><div id="linkboxlink"><center>{text:Link 1 Title}</center></div></a>{/block:IfLink1URL}
+        {block:IfLink2URL}<a href="{text:Link 2 URL}"><div id="linkboxlink"><center>{text:Link 2 Title}</center></div></a>{/block:IfLink2URL}
+        {block:IfLink3URL}<a href="{text:Link 3 URL}"><div id="linkboxlink"><center>{text:Link 3 Title}</center></div></a>{/block:IfLink3URL}
+        {block:IfLink4URL}<a href="{text:Link 4 URL}"><div id="linkboxlink"><center>{text:Link 4 Title}</center></div></a>{/block:IfLink4URL}
     </div>
     <div id="crossl"></div><div id="crossr"></div>
     </div>
@@ -896,9 +891,9 @@ $(document).ready(function() {
             {block:Answer}
             <div class="ask">
             <img class="askerportrait" src="{AskerPortraitURL-64}">
-            <div style="color:{color:Asker name};">
+            <div style="color: {color:Asker name};">
             <div class="a">
-            <b>{Asker} asks</b>: <div class="question">{Question}</div>
+            <strong>{Asker} asks</strong>: <div class="question">{Question}</div>
             </div>
             </div><br>
             <div class="answer">{Answer}</div>
@@ -923,14 +918,14 @@ $(document).ready(function() {
 
             {block:Audio}
             <div class="audio">
-            {block:AlbumArt}<div style="float:left;"><img src="{AlbumArtURL}" width="150" height="150"></div>{/block:AlbumArt}
-            <div style="position:relative; left:10px; top:5px">
-            {block:trackname}<div class="aline"><b>track name:</b> {trackname}</div>{/block:trackname}
-            {block:artist}<div class="aline"><b>artist:</b> {artist}</div>{/block:artist}
-            {block:album}<div class="aline"><b>album:</b> {album}</div>{/block:album}
-            {block:playcount}<div class="aline"><b>play count:</b> {playcount}</div>{/block:playcount}
+            {block:AlbumArt}<div style="float: left;"><img src="{AlbumArtURL}" width="150" height="150"></div>{/block:AlbumArt}
+            <div style="position: relative; left: 10px; top: 5px">
+            {block:trackname}<div class="aline"><strong>track name:</strong> {trackname}</div>{/block:trackname}
+            {block:artist}<div class="aline"><strong>artist:</strong> {artist}</div>{/block:artist}
+            {block:album}<div class="aline"><strong>album:</strong> {album}</div>{/block:album}
+            {block:playcount}<div class="aline"><strong>play count:</strong> {playcount}</div>{/block:playcount}
             </div>
-            <div style="clear:both;"></div>
+            <div style="clear: both;"></div>
             {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
             {block:IfShowCaptions}
             {block:Caption}
@@ -952,7 +947,7 @@ $(document).ready(function() {
             </div></li>
             <div class="infobar"></div>
             <div class="infobox">
-            <table style="width:500px;"><tr><td style="width:30px;"><div class="tooltip" title="Like" style="cursor:url(http://static.tumblr.com/o4povtk/aLunw2ggk/cursorw.png), auto;">{LikeButton}</div></td><td style="width:30px;"><div class="tooltip" title="Reblog">{ReblogButton}</div></td><td style="width:100px;"></td><td>{block:Date}<a href="{Permalink}" class="tooltip" title="{ShortMonth} {DayOfMonth}, {ShortYear}">{TimeAgo}</a>{/block:Date}</td><td><a href="{Permalink}" class="tooltip" title="Permalink">{NoteCountWithLabel}</a></td>{block:RebloggedFrom}<td><a href="{ReblogParentURL}" class="tooltip" title="{ReblogParentName}">Reblogged from</a></td><td><a href="{ReblogRootURL}" class="tooltip" title="{ReblogRootName}">Source</a></td>{/block:RebloggedFrom}{block:NotReblog}<td><a href="{Permalink}" class="tooltip" title="I'm the owner!">Reblogged from</a></td><td><a href="{Permalink}" class="tooltip" title="I'm the owner!">Source</a></td>{/block:NotReblog}</tr>{block:HasTags}<tr><td colspan="7">Tags: {block:Tags}<span class="tags"><a href="{TagURL}">#{Tag}</a></span>  {/block:Tags}</td></tr>{/block:HasTags}</table>
+            <table style="width: 500px;"><tr><td style="width: 30px;"><div class="tooltip" title="Like" style="cursor:url("https://static.tumblr.com/o4povtk/aLunw2ggk/cursorw.png"), auto;">{LikeButton}</div></td><td style="width:30px;"><div class="tooltip" title="Reblog">{ReblogButton}</div></td><td style="width: 100px;"></td><td>{block:Date}<a href="{Permalink}" class="tooltip" title="{ShortMonth} {DayOfMonth}, {ShortYear}">{TimeAgo}</a>{/block:Date}</td><td><a href="{Permalink}" class="tooltip" title="Permalink">{NoteCountWithLabel}</a></td>{block:RebloggedFrom}<td><a href="{ReblogParentURL}" class="tooltip" title="{ReblogParentName}">Reblogged from</a></td><td><a href="{ReblogRootURL}" class="tooltip" title="{ReblogRootName}">Source</a></td>{/block:RebloggedFrom}{block:NotReblog}<td><a href="{Permalink}" class="tooltip" title="I'm the owner!">Reblogged from</a></td><td><a href="{Permalink}" class="tooltip" title="I'm the owner!">Source</a></td>{/block:NotReblog}</tr>{block:HasTags}<tr><td colspan="7">Tags: {block:Tags}<span class="tags"><a href="{TagURL}">#{Tag}</a></span>  {/block:Tags}</td></tr>{/block:HasTags}</table>
             </div>
             
             </div>
